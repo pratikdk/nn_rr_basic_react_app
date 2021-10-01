@@ -8,7 +8,9 @@ class AddNinja extends React.Component {
     }
     submitHandler = (e) => {
         e.preventDefault();
-        console.log("Current State", this.state);
+        // console.log("Current State", this.state);
+        this.props.addNinja(this.state);
+
     }
     changeHandler = (e) => {
         this.setState({
